@@ -13,5 +13,5 @@ export default class BoatSearch extends LightningElement {
     // This custom event comes from the form
     searchBoats(event) { }
     
-    createNewBoat() { }
+    createNewBoat(event) { }
 }
