@@ -3,16 +3,12 @@
       <!-- Top -->
       <lightning-layout-item size="12">
         <lightning-card title="Find a Boat">
-          <!-- New Boat button goes here -->
-          <lightning-layout-item padding="horizontal-small">
-            <slot name="actions" >
               <lightning-button 
                   label="New Boat" 
-                  class="slds-button slds-align-right" 
-                  title="Non-primary action" 
-                  onclick={createNewBoat}></lightning-button>
-            </slot>
-          </lightning-layout-item>                    
+                  class="slds-button" 
+                  title="New Boat"
+                  slot="actions" 
+                  onclick={createNewBoat}></lightning-button>                 
           <p class="slds-var-p-horizontal_small">
             <c-boat-search-form></c-boat-search-form>
           </p>
